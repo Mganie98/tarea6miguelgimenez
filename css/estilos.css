@@ -1,0 +1,95 @@
+* { box-sizing: border-box; }
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background:#e5f6f9; 
+    color:#080808; 
+    margin:0;
+}
+
+nav { 
+    background:#3dceeb;
+    padding:18px 30px;
+    display:flex; 
+    justify-content:center;
+    gap:28px;
+    border-bottom:1px solid #f6f7f7;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+nav a { 
+    text-decoration:none; 
+    color:#333; 
+    font-weight:600; 
+    padding:8px 16px;
+    border-radius:6px;
+    transition: all .25s ease;
+}
+nav a:hover {
+    background:#0d6efd;
+    color:white;
+}
+
+h1, h2 {
+    text-align:center;
+    margin-top:40px;
+    font-weight:700;
+    color:#0d1b2a;
+}
+
+.container {
+    width:100%;
+    max-width:1100px;
+    margin: auto;
+    padding:20px 0;
+}
+
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card {
+    background:white;
+    border: radius 10px;
+    padding:15px;
+    margin:10px;
+    width:550px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+.card:hover {
+    transform:translateY(-4px);
+    box-shadow:0 6px 20px rgba(0,0,0,0.12);
+}
+
+.card img, .card video, .card audio {
+    width:100%;
+    border-radius:8px;
+}
+
+.download-btn {
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 12px;
+    background:#0d6efd;
+    color:white;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:14px;
+}
+.download-btn:hover {
+    background:#084298;
+}
+
+iframe {
+    display:block;
+    margin:30px auto;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
